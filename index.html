@@ -20,7 +20,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fredoka+One&family=Josefin+Sans:ital,wght@1,200&family=Josefin+Slab:ital,wght@1,500&family=Roboto+Slab&display=swap" rel="stylesheet">
 <!-- font close -->
 
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="navbarstyles.css">
+  <link rel="stylesheet" href="style.css">
+
 
 <style>
  *{
@@ -50,6 +52,13 @@ body{
   margin-bottom:1rem;
 }
 
+.navbar {
+  background-color:transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar.scrolled {
+  background-color: #000;
+}
 
 .carousel-item img {
 	width: 100%;
@@ -61,11 +70,11 @@ body{
 @font-face{
 	font-family: meri_marzi;
 	src: url("../font/go3v2.ttf");
-}
+/* }
 .nav-link{
   font-family:meri_marzi ;
 
-}
+} */
 p {
   font-family: 'Barlow Condensed', sans-serif;
 }
@@ -121,11 +130,12 @@ background: radial-gradient(circle, rgba(193,192,208,1) 0%, rgba(233,233,242,1) 
 <body>
 	
 
-
+<!-- 
 <nav class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
   <div class="container-fluid">
 
-    <a class="navbar-brand " style="font-family: 'Tilt Prism', cursive;" href="index.html"><img class="img-fluid logo" src="img/biot.png" >&nbsp;  BIOS</a>
+    <a class="navbar-brand " style="font-family: 'Tilt Prism', cursive;" href="index.html"><img class="img-fluid logo" style="
+      border: 1px solid #ddd;border-radius: 50%;  width: 9.3rem;" src="img/biot.png" >&nbsp;  BIOS</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span> 
     </button>
@@ -138,7 +148,7 @@ background: radial-gradient(circle, rgba(193,192,208,1) 0%, rgba(233,233,242,1) 
           <a class="nav-link active nav" aria-current="page" href="#event">Events</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active nav" aria-current="page" href="#about">About</a>
+          <a class="nav-link active nav" aria-current="page" href="about.html">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active nav" aria-current="page" href="#contact">Contact</a>
@@ -147,8 +157,44 @@ background: radial-gradient(circle, rgba(193,192,208,1) 0%, rgba(233,233,242,1) 
         
     </div>
   </div>
-</nav>
+</nav> -->
 
+<!-- Navbar  -->
+<nav class="navbar fixed-top navbar-expand-lg  ">
+  <div class="container">
+    <a class="navbar-brand ml-0" href="#"> <a class="navbar-brand " style="font-family: 'Tilt Prism', cursive;" href="index.html"><img class="img-fluid logo" style="
+      border: 1px solid #ddd;border-radius: 50%;  width: 9.3rem;" src="img/biot.png" > &nbsp;BIOTS</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse order-2" id="navbarNav">
+      <div class="mx-auto"></div>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="event\eventpage.html">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="about.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contact">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
 <!--carousel-->
@@ -161,27 +207,28 @@ background: radial-gradient(circle, rgba(193,192,208,1) 0%, rgba(233,233,242,1) 
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
 
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 5"></button>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/hom2.png" class="d-block w-100" alt="">
+      <img src="img/hom.jpg" class="d-block w-100" alt="">
       <div class="carousel-caption  d-md-block">
         <h5></h5>
         <p></p>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="img/66.jpg" class="d-block w-100" alt="">
+      <img src="img/grp.png" class="d-block w-100" alt="">
       <div class="carousel-caption  d-md-block">
         <h5></h5>
         <p></p>
       </div>
-    </div>
-    <div class="carousel-item">
+    </div><div class="carousel-item">
       <img src="img/99.png" class="d-block w-100" alt="">
       <div class="carousel-caption  d-md-block">
         <h5></h5>
@@ -196,6 +243,13 @@ background: radial-gradient(circle, rgba(193,192,208,1) 0%, rgba(233,233,242,1) 
       </div>
     </div>
     <div class="carousel-item">
+      <img src="img/sab.png" class="d-block w-100" alt="">
+      <div class="carousel-caption  d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
       <img src="img/77.jpg" class="d-block w-100" alt="">
       <div class="carousel-caption  d-md-block">
         <h5></h5>
@@ -204,6 +258,13 @@ background: radial-gradient(circle, rgba(193,192,208,1) 0%, rgba(233,233,242,1) 
     </div>
     <div class="carousel-item">
       <img src="img/6.jpg" class="d-block w-100" alt="">
+      <div class="carousel-caption  d-md-block">
+        <h5></h5>
+        <p></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/66.jpg" class="d-block w-100" alt="">
       <div class="carousel-caption  d-md-block">
         <h5></h5>
         <p></p>
@@ -245,7 +306,7 @@ background: radial-gradient(circle, rgba(193,192,208,1) 0%, rgba(233,233,242,1) 
       <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
   
   <figure>
-    <img src="img/334.jpg" class="img-fluid about_img">
+    <img src="img/334.jpg" style="height: 120vh; width: 70rem;" class="img-fluid about_img">
   </figure>
   
   
@@ -318,7 +379,7 @@ Our team is made up of experienced professionals who are passionate about the bi
         <div class="col-lg-6 col-md-6 col-12 col-xxl-6">
     
           <figure>
-            <img src="img/3333.jpg" class="img-fluid about_img" style="width:90rem;height:50rem;">
+            <img src="img/3333.jpg" class="img-fluid about_img" style="width:90rem;height:20rem;">
           </figure>
           
           
@@ -331,25 +392,144 @@ Our team is made up of experienced professionals who are passionate about the bi
     
     </section>
   
-    
-  
+   
+<section class=" main_heading my-5  py-5 text-capitalize bg-light" id="contact">
+
+	<div class="text-center text-capitalize ">
+		<h1 class="display-4">contact us</h1>
+		<hr class="w-25 mx-auto" />
+	</div>
+
+<div class="container  contact">
+	<div class="row">
+		<div class="col-xxl-8 col-10  col-md-8 mx-auto">
+			<form action="https://formspree.io/f/xlevnden" method="POST" >
+	
+<!-- enctype="multipart/form-data" -->
+
+	<div class="mb-3">
+	<label for="exampleFormControlInput1" class="form-label">Full Name</label>
+
+<div class="input-group">
+
+    <div class="input-group-text">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/></svg>
+    </div>
+	<input type="name" class="form-control" id="exampleFormControlInput1"  placeholder="Enter Your Name"required autocomplete="off" name="Full_Name">
+
+</div>
+
+</div>
+<div class="mb-3">
+	<label for="exampleFormControlInput1" class="form-label">Email address</label>
+
+<div class="input-group">
+
+    <div class="input-group-text">
+    	
+    	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+</svg>
+
+    </div>
+
+	<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required autocomplete="off" name="Email_Address">
+</div>
+
+</div>
 
 
 
-  
-<footer class="bg-dark text-white pt-5 pb-5 text-center text-capitalize">
+
+<div class="mb-3">
+	<label for="exampleFormControlTextarea1" class="form-label">comment</label>
+	<textarea class="form-control " id="exampleFormControlTextarea1" rows="3"  name="Message" ></textarea>
+</div>
+
+<div class="mb-3">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+  <label class="form-check-label" for="flexCheckChecked">
+    Checked
+  </label>
+</div>
+
+<div class="mb-3">
+<input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+
+<button class="btn btn-outline-danger" 
+ for="success-outlined" type="submit">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+  <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+</svg>
+Send!!</button>
+
+&nbsp&nbsp&nbsp
+
+<button class="btn btn-outline-secondary " 
+ for="success-outlined" type="reset">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+  <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+</svg>
+
+ Reset!!
+</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+			</form>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+</div>
+</section>
+
+
+
+<footer class="bg-dark text-white pt-5 pb-2 text-center text-capitalize">
   <div class="container">
   
   <hr class="w-100 bg-secondary">
+
+
+
   <div class="row ">
-  <div class="col-12 text-center">
+
+    <div class="col-lg-2 col-md-2 col-12 mt-5 ">
+        <a href="index.html"><img src="img/biot.png" class="img-fluid"></a>
+        </div>
+
+  <div class="col-lg-6 col-md-6 col-12 ">
   <div class="copyright mt-5 pt-5">
   <div class="text-secondary"><samp>© 2022—2023 All Rights Reserved.</samp></div><br>
   <h6 class="text-secondary w-100"> BIOTS FAMILY</h6>
-  <div class="text-secondary"><samp></samp></div>
+  <div class="text-secondary mail"> <samp><a href="https://mail.google.com/mail/u/0/?fs=1&to=biotsbitmesra@gmail.com&su=SUBJECT:
+    -&body=Message:-&tf=cm" target="_blank" style="text-decoration: none;"><a href="https://mail.google.com/mail/u/0/?fs=1&to
+    =biotsbitmesra@gmail.com&su=SUBJECT:-&body=Message:-&tf=cm" target="_blank" style="text-decoration: none;">
+    biotsbitmesra@gmail.com</a></samp></div>
   
   <center>
-  <div class="col-md-4 col-xxl-4 col-xl-4 col-4 footers">
+  <div class=" footers">
     <ul class="list-inline social-media ">
       <li><a href="https://www.facebook.com/depbiots/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
       <li><a href="https://www.instagram.com/biotsbitmesra/"  target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
@@ -359,16 +539,40 @@ Our team is made up of experienced professionals who are passionate about the bi
     </center>
   </div>
   </div>
+
+
+  <div class="col-lg-4 col-md-4 col-12 ">
+        <div class="copyright mt-5 pt-5">
+            
+            <h6 class="text-secondary w-100"> DEVELOPED BY :</h6>
+            
+
+         <div class="row " ">
+    
+        <a href="https://www.linkedin.com/in/ankit-raj-4512a1107?utm_source=share&utm_campaign=share_via&utm_content=profile&utm
+        _medium=android_app" style="text-decoration: none;" class="stop-animation "><p>Ankit Raj (K20)</p></a>
+        <a href="https://www.linkedin.com/in/aryan-raj-7b1100227/" style="text-decoration: none;" class="stop-animation "><p>Aryan Raj Saxena (K21)</p></a>
+        <a href="https://www.linkedin.com/in/kumar-sanyam-004892264" style="text-decoration: none;" class="stop-animation "><p>Kumar Sanyam (K21)</p></a>
+   
+        <a href="https://www.linkedin.com/in/nikhilkumar16/" class="nik" style="text-decoration: none; "><h6>NIKHIL KUMAR (K22)</h6></a>
+            <div class="text-secondary"><samp>Archeet Bandhul (K22)</samp></div>
+            <div class="text-secondary"><samp>Aviroop Shi (K22)</samp></div>
+            <div class="text-secondary"><samp>Shreyas Dasgupta (K22)</samp></div>
+
+        
+      
+        </div>
+
+
+
+</div>
   
-  </div>
   
   
   
   </div>
   </footer>
-  
-  
-</body>
+  </body>
 </html>
 
 
@@ -393,3 +597,13 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 })
 </script>
 
+<script>
+window.addEventListener("scroll", function() {
+  var navbar = document.querySelector(".navbar");
+  if (window.pageYOffset > 0) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+});
+</script>
